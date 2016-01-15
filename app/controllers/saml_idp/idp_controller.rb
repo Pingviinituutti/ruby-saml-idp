@@ -3,7 +3,7 @@ module SamlIdp
   class IdpController < ActionController::Base
     include SamlIdp::Controller
 
-    unloadable
+    # unloadable # see https://github.com/thoughtbot/clearance/issues/276
 
     protect_from_forgery
 
